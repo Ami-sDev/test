@@ -8,9 +8,3 @@ toggle.addEventListener('click' , () => {
 })
 
 //-------------------------------------------------------------------------------------------------//
-
-console.log(1)
-console.log(window.Telegram.WebApp.initData)
-console.log(window.Telegram.WebApp.initDataUnsafe)
-console.log(2)
-
