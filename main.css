@@ -10,7 +10,7 @@
 /*-------------------------------------------------------------------------------------------------*/
 
 body {
-    min-height: 150vh;
+    min-height: 105vh;
     background-color: #0a0f1d;
     transition: all 0.3s ease;
     overflow-x: auto;
