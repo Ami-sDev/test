@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -46,6 +45,42 @@ nav button {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(37, 46, 71);
+    color: #fff;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(37, 46, 71) transparent transparent transparent;
+}
+
+nav button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 .icon {
@@ -55,9 +90,10 @@ nav button {
     margin-top: 4px;
 }
 
-.icon:hover {
+button:hover .icon {
     color: #45adf4;
 }
+
 
 /*-------------------------------------------------------------------------------------------------*/
 
