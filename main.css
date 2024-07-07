@@ -49,6 +49,9 @@ body {
 }
 
 .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 210px;
     width: calc(100% - 50px);
