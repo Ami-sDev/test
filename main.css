@@ -17,6 +17,48 @@ body {
     overflow-x: auto;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 58px;
+    width: 400px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgb(37, 46, 71);
+    z-index: 9999;
+    padding: 0 10px;
+}
+
+nav button {
+    flex: 1;
+    margin: 0 5px;
+    height: 36px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(37, 46, 71);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 24px;
+    font-weight: 300;
+    color: #a7aab4;
+    margin-top: 4px;
+}
+
+.icon:hover {
+    color: #45adf4;
+}
+
 /*-------------------------------------------------------------------------------------------------*/
 
 .title {
