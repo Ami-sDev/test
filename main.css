@@ -227,6 +227,7 @@ header .image-text .profession {
     text-align: left;
     border-radius: 0.6rem;
     height: 300px;
+    min-width: 500px;
     width: calc(100% - 20px);
     background: rgb(25, 32, 51);
 }
@@ -252,6 +253,7 @@ header .image-text .profession {
     text-align: left;
     border-radius: 0.6rem;
     height: 80px;
+    min-width: 500px;
     width: calc(100% - 20px);
     top: 50px;
     background: rgb(25, 32, 51);
