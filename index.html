@@ -5,8 +5,8 @@
     <link rel="icon" href="">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css?v=1">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -169,22 +169,7 @@
         </div>
     </div>
 
-
 <script src="script.js"></script>
-<script>
- const linkItems = document.querySelectorAll(".link-item");
-
-linkItems.forEach((linkItem, index) => {
-    linkItem.addEventListener("click", () => {
-        document.querySelector(".active").classList.remove("active");
-        linkItem.classList.add("active");
-
-        const indicator = document.querySelector(".indicator");
-
-        indicator.style.left = `${index * 95 + 48}px`;
-    })
-})
-</script>
 
 </body>
 </html>
