@@ -14,8 +14,6 @@
 
 <body>
 
-
-
     <p class="title">PromoCode</p>
     <div class="wrapper">
         <div class="card">
@@ -174,10 +172,18 @@
 
 <script src="script.js"></script>
 <script>
-    console.log(1)
-    console.log(window.Telegram.WebApp.initData)
-    console.log(window.Telegram.WebApp.initDataUnsafe)
-    console.log(2)
+ const linkItems = document.querySelectorAll(".link-item");
+
+linkItems.forEach((linkItem, index) => {
+    linkItem.addEventListener("click", () => {
+        document.querySelector(".active").classList.remove("active");
+        linkItem.classList.add("active");
+
+        const indicator = document.querySelector(".indicator");
+
+        indicator.style.left = `${index * 95 + 48}px`;
+    })
+})
 </script>
 
 </body>
