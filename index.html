@@ -1,177 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>CoinPot</title>
     <link rel="icon" href="">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css?v=4.5">
+    <meta name="viewport" content="width=800, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 
 <body>
+
 <nav>
     <button><i class='bx bx-home icon'></i><span class="tooltip">Home</span></button>
     <button><i class='bx bxs-bolt icon'></i><span class="tooltip">Multiplier</span></button>
     <button><i class='bx bx-trophy icon'></i><span class="tooltip">Leaderboard</span></button>
-    <button><i class='bx bx-bar-chart-alt-2 icon'></i><span class="tooltip">Statistics</span></button>
 </nav>
 
-    <p class="title">PromoCode</p>
-    <div class="wrapper">
-        <div class="card">
-            <div class="line cL7G3s"></div>
-            <div class="inner">
-                <span class="info lvl">
-                    <span>
-                        <small>lvl</small> 1 / <small>PPH:</small> +220
-                    </span>
-                </span>
-                <div class="container">
-                    <svg class="container" xmlns="http://www.w3.org/2000/svg" height="200" width="200">
-                        <g style="order: -1;">
-                            <polygon
-                                    transform="rotate(45 100 100)"
-                                    stroke-width="1"
-                                    stroke="#d3a410"
-                                    fill="none"
-                                    points="70,70 148,50 130,130 50,150"
-                                    id="bounce"
-                            ></polygon>
-                            <polygon
-                                    transform="rotate(45 100 100)"
-                                    stroke-width="1"
-                                    stroke="#d3a410"
-                                    fill="none"
-                                    points="70,70 148,50 130,130 50,150"
-                                    id="bounce2"
-                            ></polygon>
-                            <polygon
-                                    transform="rotate(45 100 100)"
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="#414750"
-                                    points="70,70 150,50 130,130 50,150"
-                            ></polygon>
-                            <polygon
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="url(#gradiente)"
-                                    points="100,70 150,100 100,130 50,100"
-                            ></polygon>
-                            <defs>
-                                <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
-                                    <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
-                                    <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
-                                </linearGradient>
-                            </defs>
-                            <polygon
-                                    transform="translate(20, 31)"
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="#b7870f"
-                                    points="80,50 80,75 80,99 40,75"
-                            ></polygon>
-                            <polygon
-                                    transform="translate(20, 31)"
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="url(#gradiente2)"
-                                    points="40,-40 80,-40 80,99 40,75"
-                            ></polygon>
-                            <defs>
-                                <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
-                                    <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
-                                    <stop
-                                            style="stop-color:#d3a51054;stop-opacity:1"
-                                            offset="100%"
-                                            id="animatedStop"
-                                    ></stop>
-                                </linearGradient>
-                            </defs>
-                            <polygon transform="rotate(180 100 100) translate(20, 20)"
-                                     stroke-width="2"
-                                     stroke=""
-                                     fill="#d3a410"
-                                     points="80,50 80,75 80,99 40,75"
-                            ></polygon>
-                            <polygon
-                                    transform="rotate(0 100 100) translate(60, 20)"
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="url(#gradiente3)"
-                                    points="40,-40 80,-40 80,85 40,110.2"
-                            ></polygon>
-                            <defs>
-                                <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
-                                    <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
-                                    <stop
-                                            style="stop-color:#d3a51054;stop-opacity:1"
-                                            offset="100%"
-                                            id="animatedStop"
-                                    ></stop>
-                                </linearGradient>
-                            </defs>
-                            <polygon
-                                    transform="rotate(45 100 100) translate(80, 95)"
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="#ffe4a1"
-                                    points="5,0 5,5 0,5 0,0"
-                                    id="particles"
-                            ></polygon>
-                            <polygon
-                                    transform="rotate(45 100 100) translate(80, 55)"
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="#ccb069"
-                                    points="6,0 6,6 0,6 0,0"
-                                    id="particles"
-                            ></polygon>
-                            <polygon
-                                    transform="rotate(45 100 100) translate(70, 80)"
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="#fff"
-                                    points="2,0 2,2 0,2 0,0"
-                                    id="particles"
-                            ></polygon>
-                            <polygon
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="#292d34"
-                                    points="29.5,99.8 100,142 100,172 29.5,130"
-                            ></polygon>
-                            <polygon
-                                    transform="translate(50, 92)"
-                                    stroke-width="2"
-                                    stroke=""
-                                    fill="#1f2127"
-                                    points="50,50 120.5,8 120.5,35 50,80"
-                            ></polygon>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <div class="button-container">
-                <button type="button" class="start"><i class='bx bxs-battery-charging' style="position: relative; right: 7px; color: #45adf4; font-size: 40px;"></i>START</button>
-                <button type="button" class="upgrade"><i class='bx bxs-chevrons-up' style='position: relative; right: 7px; color: #34e243; font-size: 40px;'></i>LVL-UP</button>
-            </div>
+<div class="wrapper">
+    <div class="ckH7s3">
+        <div class="line cL7G3s"></div>
+        <p class="title">MULTIPLY YOUR BALANCE</p>
+        <p class="info-ci9ur7b">Roll 000-999. Provably fair. 0% house edge.</p>
+        <p class="info-cK7lqm"><i class='bx bx-target-lock' style="position: relative; top: 2px; right: 7px;"></i>Roll <span class="color-c7gKa">000-499</span> to win <span class="color-ck3fv">2 times</span> your stake <span class="color-cJ6kP">(50% win chance)</span></p>
+        <div class="counter">
+            <div>–</div>
+            <div>–</div>
+            <div>–</div>
         </div>
     </div>
-    <div class="wrapper">
-        <div class="promo-code">
-            <div class="line cpj5D2"></div>
-            <input class="input" type="text" placeholder="Еnter The Promo Code">
-            <button type="button" class="activate"><i class='bx bxs-gift' style="position: relative; right: 7px; color: #f49d45; font-size: 25px;"></i>Activate</button>
-        </div>
-    </div>
-
-<script src="script.js"></script>
+</div>
 
 </body>
 </html>
