@@ -11,6 +11,7 @@
 
 body {
     min-height: 100vh;
+    min-width: 600px;
     background-color: #0a0f1d;
     transition: all 0.3s ease;
     overflow-x: auto;
@@ -105,7 +106,7 @@ button:hover .icon {
 
 .ckH7s3 {
     display: flex;
-    overflow: auto;
+    overflow: hidden;
     position: relative;
     justify-content: center;
     align-items: center;
