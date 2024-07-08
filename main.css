@@ -114,16 +114,16 @@ button:hover .icon {
     background: rgb(25, 32, 51);
 }
 
-/*.cJfg5sq {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    height: 310px;*/
-/*    width: calc(100% - 50px);*/
-/*    background: rgb(36, 46, 73);*/
-/*    border-radius: 0.6rem;*/
-/*}*/
+.cJfg5sq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 270px;
+    width: calc(100% - 50px);
+    background: rgb(36, 46, 73);
+    border-radius: 0.6rem;
+}
 
 /*-------------------------------------------------------------------------------------------------*/
 
@@ -183,7 +183,7 @@ button:hover .icon {
 
 .info-cK7lqm {
     position: absolute;
-    top: 260px;
+    top: 220px;
     color: #FFFFFF;
     font-weight: 5;
     font-size: 16px;
