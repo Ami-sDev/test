@@ -10,7 +10,7 @@
 /*-------------------------------------------------------------------------------------------------*/
 
 body {
-    min-height: 105vh;
+    min-height: 100vh;
     background-color: #0a0f1d;
     transition: all 0.3s ease;
     overflow-x: auto;
@@ -94,18 +94,6 @@ button:hover .icon {
     color: #45adf4;
 }
 
-
-/*-------------------------------------------------------------------------------------------------*/
-
-.title {
-    position: absolute;
-    top: 350px;
-    left: 40px;
-    font-weight: 600;
-    font-size: 22px;
-    color: #FFFFFF;
-}
-
 /*-------------------------------------------------------------------------------------------------*/
 
 .wrapper {
@@ -115,42 +103,51 @@ button:hover .icon {
     padding-top: 20px;
 }
 
-.card {
-    overflow: hidden;
+.ckH7s3 {
+    display: flex;
+    overflow: auto;
     position: relative;
-    align-items: center;
     justify-content: center;
-    text-align: left;
+    align-items: center;
     border-radius: 0.6rem;
     height: 300px;
     width: calc(100% - 20px);
     background: rgb(25, 32, 51);
+    white-space: nowrap;
 }
 
-.inner {
+/*.cJfg5sq {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*    height: 310px;*/
+/*    width: calc(100% - 50px);*/
+/*    background: rgb(36, 46, 73);*/
+/*    border-radius: 0.6rem;*/
+/*}*/
+
+/*-------------------------------------------------------------------------------------------------*/
+
+.counter {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    top: 20px;
+}
+
+.counter div {
+    width: 60px;
+    height: 100px;
+    margin: 0 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    height: 210px;
-    width: calc(100% - 50px);
-    top: 15px;
-    left: 25px;
-    background: rgb(36, 46, 73);
-    border-radius: 0.6rem;
-}
-
-.promo-code {
-    overflow: hidden;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    border-radius: 0.6rem;
-    height: 150px;
-    width: calc(100% - 20px);
-    top: 50px;
-    background: rgb(25, 32, 51);
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background-color: #29b6f6;
+    border: #FFFFFF;
 }
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -169,183 +166,49 @@ button:hover .icon {
     background: #45adf4;
 }
 
-.cpj5D2 {
-    background: #f49d45;
-}
-
 /*-------------------------------------------------------------------------------------------------*/
 
-.info {
-    background-color: #9cd9fa;
-    border-radius: 99em 0 0 99em;
-    display: flex;
-    align-items: center;
-    padding: 0.625em 0.75em;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #192033FF;
-}
-
-.lvl {
+.title {
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: 20px;
+    color: #FFFFFF;
+    font-weight: 5;
+    font-size: 26px;
 }
 
-/*-------------------------------------------------------------------------------------------------*/
-
-@keyframes bounce {
-    0%,
-    100% {
-        translate: 0px 36px;
-    }
-    50% {
-        translate: 0px 46px;
-    }
-}
-
-@keyframes bounce2 {
-    0%,
-    100% {
-        translate: 0px 46px;
-    }
-    50% {
-        translate: 0px 56px;
-    }
-}
-
-@keyframes umbral {
-    0% {
-        stop-color: #d3a5102e;
-    }
-    50% {
-        stop-color: rgba(211, 165, 16, 0.519);
-    }
-    100% {
-        stop-color: #d3a5102e;
-    }
-}
-
-@keyframes partciles {
-    0%,
-    100% {
-        translate: 0px 16px;
-    }
-    50% {
-        translate: 0px 6px;
-    }
-}
-
-#particles {
-    animation: partciles 4s ease-in-out infinite;
-}
-
-#animatedStop {
-    animation: umbral 4s infinite;
-}
-
-#bounce {
-    animation: bounce 4s ease-in-out infinite;
-    translate: 0px 36px;
-}
-
-#bounce2 {
-    animation: bounce2 4s ease-in-out infinite;
-    translate: 0px 46px;
-    animation-delay: 0.5s;
-}
-
-/*-------------------------------------------------------------------------------------------------*/
-
-.input {
-    position: relative;
-    width: calc(100% - 50px);
-    height: 50px;
-    top: 15px;
-    left: 25px;
-    line-height: 30px;
-    padding: 0 5rem 0 1rem;
-    border: 2px solid transparent;
-    border-radius: 0.6rem;
-    outline: none;
-    background: rgb(36, 46, 73);
-    color: #fff;
-    transition: .5s ease;
-}
-
-.input::placeholder {
-    font-size: 16px;
+.info-ci9ur7b {
+    position: absolute;
+    top: 60px;
     color: #707e94;
+    font-size: 18px;
 }
 
-/*-------------------------------------------------------------------------------------------------*/
-
-.button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100% - 50px);
-    margin: 0 auto;
-    position: relative;
-    top: 25px;
-    gap: 10px;
-}
-
-.upgrade, .start {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    border-radius: 0.6rem;
-    height: 50px;
-    width: 49.5%;
-    background: rgb(36, 46, 73);
-    border: 0px;
-    transition: transform 0.3s ease;
-    font-weight: 600;
-    font-size: 16px;
+.info-cK7lqm {
+    position: absolute;
+    top: 260px;
     color: #FFFFFF;
+    font-weight: 5;
+    font-size: 18px;
 }
 
-.activate {
-    overflow: hidden;
-    position: relative;
-    top: 25px;
-    left: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    border-radius: 0.6rem;
-    height: 50px;
-    width: calc(100% - 50px);
-    background: rgb(36, 46, 73);
-    border: 0px;
-    transition: transform 0.3s ease;
-    font-weight: 600;
-    font-size: 16px;
-    color: #FFFFFF;
+.color-c7gKa {
+    color: #fcbd0a;
 }
 
-.start:hover {
-    background: rgb(47, 58, 88);
+.color-ck3fv {
     color: #45adf4;
 }
 
-.upgrade:hover {
-    background: rgb(47, 58, 88);
-    color: #34e243;
-}
-
-.activate:hover {
-    background: rgb(47, 58, 88);
-    color: #f49d45;
-}
-
-button:active {
-    transform: scale(0.98);
+.color-cJ6kP {
+    color: #8372a9;
 }
 
 /*-------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
