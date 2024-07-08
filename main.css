@@ -113,7 +113,6 @@ button:hover .icon {
     height: 300px;
     width: calc(100% - 20px);
     background: rgb(25, 32, 51);
-    white-space: nowrap;
 }
 
 /*.cJfg5sq {*/
