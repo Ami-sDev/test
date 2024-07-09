@@ -11,7 +11,7 @@
 
 body {
     min-height: 100vh;
-    min-width: 720px;
+    min-width: 600px;
     background-color: #0a0f1d;
 }
 
@@ -207,6 +207,7 @@ button:hover .icon {
     padding: 5px;
     position: relative;
     top: 100px;
+    white-space: nowrap;
 }
 
 .radio-button, .multiplier-button {
@@ -252,7 +253,13 @@ button:hover .icon {
 @media (max-width: 720px) {
 
     .buttons, .multipliers {
-        padding: -5px;
+        scale: 0.8;
+    }
+    .buttons {
+        left: 35px;
+    }
+    .multipliers {
+        left: -25px;
     }
 }
 
