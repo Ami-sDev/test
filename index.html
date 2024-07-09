@@ -25,9 +25,29 @@
     <div class="ckH7s3">
         <div class="line cL7G3s"></div>
         <div class="cJfg5sq">
-            <p class="title">MULTIPLY YOUR BALANCE</p>
+            <p class="title-B7flq6">MULTIPLY YOUR BALANCE</p>
             <p class="info-ci9ur7b">Roll 000-999. Provably fair. 0% house edge.</p>
-            <p class="info-cK7lqm"><i class='bx bx-target-lock' style="position: relative; top: 2px; right: 7px;"></i>Roll <span class="color-c7gKa">000-499</span> to win <span class="color-ck3fv">2 times</span> your stake</p>
+            <div class="buttons">
+                <input type="radio" id="roll-low" name="roll" class="radio-button" checked>
+                <label for="roll-low" class="radio-label">Roll low</label>
+                <input type="radio" id="roll-high" name="roll" class="radio-button">
+                <label for="roll-high" class="radio-label">Roll high</label>
+            </div>
+            <div class="multipliers">
+                <input type="radio" id="multiply-2x" name="multiply" class="multiplier-button" checked>
+                <label for="multiply-2x" class="multiplier-label">2x</label>
+                <input type="radio" id="multiply-5x" name="multiply" class="multiplier-button">
+                <label for="multiply-5x" class="multiplier-label">5x</label>
+                <input type="radio" id="multiply-10x" name="multiply" class="multiplier-button">
+                <label for="multiply-10x" class="multiplier-label">10x</label>
+                <input type="radio" id="multiply-20x" name="multiply" class="multiplier-button">
+                <label for="multiply-20x" class="multiplier-label">20x</label>
+                <input type="radio" id="multiply-100x" name="multiply" class="multiplier-button">
+                <label for="multiply-100x" class="multiplier-label">100x</label>
+                <input type="radio" id="multiply-1000x" name="multiply" class="multiplier-button">
+                <label for="multiply-1000x" class="multiplier-label">1000x</label>
+            </div>
+            <p class="info-cK7lqm"><i class='bx bx-target-lock' style="position: relative; top: 2px; right: 7px;"></i>Roll <span class="color-c7gKa">000-499</span> to win <span class="color-ck3fv">2 times</span> your amount <span class="color-cJ6kP"> / 50% win chance</span></p>
             <div class="counter">
                 <div>–</div>
                 <div>–</div>
@@ -36,6 +56,8 @@
         </div>
     </div>
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
