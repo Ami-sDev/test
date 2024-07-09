@@ -145,8 +145,8 @@ button:hover .icon {
 .counter {
     display: flex;
     justify-content: left;
-    position: fixed;
-    top: 150px;
+    position: absolute;
+    top: 120px;
 }
 
 .counter div {
@@ -173,14 +173,6 @@ button:hover .icon {
     font-size: 26px;
 }
 
-.title-Lj1a6P {
-    position: relative;
-    left: 50px;
-    color: #FFFFFF;
-    font-weight: 5;
-    font-size: 22px;
-}
-
 .info-ci9ur7b {
     position: absolute;
     top: 60px;
@@ -201,7 +193,7 @@ button:hover .icon {
 }
 
 .color-ck3fv {
-    color: #45adf4;
+    color: #00c091;
 }
 
 .color-cJ6kP {
@@ -212,8 +204,6 @@ button:hover .icon {
 
 .buttons, .multipliers {
     display: flex;
-    justify-content: center;
-    margin: 10px 0;
     padding: 5px;
     position: relative;
     top: 100px;
@@ -257,6 +247,13 @@ button:hover .icon {
 
 .radio-button:checked + .radio-label {
     background-color: #f39c12;
+}
+
+@media (max-width: 720px) {
+
+    .buttons, .multipliers {
+        padding: -5px;
+    }
 }
 
 
