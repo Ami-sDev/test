@@ -10,6 +10,7 @@
 /*-------------------------------------------------------------------------------------------------*/
 
 body {
+    overflow-x: auto;
     min-height: 100vh;
     background-color: #0a0f1d;
 }
@@ -102,7 +103,7 @@ button:hover .icon {
 }
 
 .ckH7s3 {
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     border-radius: 0.6rem;
     height: 470px;
@@ -112,6 +113,7 @@ button:hover .icon {
 }
 
 .cJfg5sq {
+    overflow: auto;
     display: flex;
     justify-content: center;
     align-items: center;
