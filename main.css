@@ -103,17 +103,14 @@ button:hover .icon {
 }
 
 .ckH7s3 {
-    overflow: auto;
     position: relative;
     border-radius: 0.6rem;
     height: 470px;
-    min-width: 500px;
     width: calc(100% - 20px);
     background: rgb(25, 32, 51);
 }
 
 .cJfg5sq {
-    overflow: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,7 +210,6 @@ button:hover .icon {
     padding: 5px;
     position: absolute;
     top: 240px;
-
     white-space: nowrap;
 }
 
