@@ -170,6 +170,7 @@ button:hover .icon {
     color: #FFFFFF;
     font-weight: 5;
     font-size: 26px;
+    white-space: nowrap;
 }
 
 .info-ci9ur7b {
@@ -177,6 +178,7 @@ button:hover .icon {
     top: 60px;
     color: #707e94;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .info-cK7lqm {
@@ -185,6 +187,7 @@ button:hover .icon {
     color: #FFFFFF;
     font-weight: 5;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .color-c7gKa {
@@ -252,6 +255,35 @@ button:hover .icon {
 
 .radio-button:checked + .radio-label {
     background-color: #f39c12;
+}
+
+@media (max-width: 500px) {
+    .title-B7flq6, .info-cK7lqm, .info-ci9ur7b, .counter, .buttons, .multipliers {
+        scale: 0.6;
+    }
+    .info-ci9ur7b {
+        top: 50px;
+    }
+    .counter {
+        top: 60px;
+    }
+    .multipliers {
+        top: 160px;
+    }
+    .buttons {
+        top: 200px;
+    }
+    .ckH7s3 {
+        height: 340px;
+    }
+    .cJfg5sq {
+        height: 270px;
+    }
+    .info-cK7lqm {
+        top: 240px;
+    }
+
+
 }
 
 
