@@ -11,7 +11,7 @@
 
 body {
     min-height: 100vh;
-    min-width: 600px;
+    min-width: 510px;
     background-color: #0a0f1d;
 }
 
@@ -116,7 +116,7 @@ button:hover .icon {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 370px;
+    height: 400px;
     width: calc(100% - 50px);
     top: 15px;
     left: 25px;
@@ -182,7 +182,7 @@ button:hover .icon {
 
 .info-cK7lqm {
     position: absolute;
-    top: 320px;
+    top: 360px;
     color: #FFFFFF;
     font-weight: 5;
     font-size: 16px;
@@ -196,17 +196,21 @@ button:hover .icon {
     color: #00c091;
 }
 
-.color-cJ6kP {
-    color: #8372a9;
-}
-
 /*-------------------------------------------------------------------------------------------------*/
 
-.buttons, .multipliers {
+.buttons {
+    display: flex;
+    position: absolute;
+    top: 300px;
+    width: 400px;
+    white-space: nowrap;
+}
+
+.multipliers {
     display: flex;
     padding: 5px;
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 240px;
     white-space: nowrap;
 }
 
@@ -216,6 +220,7 @@ button:hover .icon {
 
 .radio-label, .multiplier-label {
     margin: 0;
+    width: 100%;
     padding: 10px 20px;
     border-radius: 0;
     cursor: pointer;
@@ -248,19 +253,6 @@ button:hover .icon {
 
 .radio-button:checked + .radio-label {
     background-color: #f39c12;
-}
-
-@media (max-width: 720px) {
-
-    .buttons, .multipliers {
-        scale: 0.8;
-    }
-    .buttons {
-        left: 35px;
-    }
-    .multipliers {
-        left: -25px;
-    }
 }
 
 
