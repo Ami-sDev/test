@@ -201,6 +201,11 @@ nav button:hover .icon {
     right: 15px;
 }
 
+.b7YqLy8:hover {
+    background: rgb(47, 58, 88);
+    color: #45adf4;
+}
+
 .b7YqLy8:active {
     transform: scale(0.98);
 }
@@ -327,28 +332,28 @@ nav button:hover .icon {
 
 @media (max-width: 500px) {
     .title-B7flq6, .info-cK7lqm, .info-ci9ur7b, .counter, .buttons, .multiply {
-        scale: 0.6;
+        scale: 0.7;
     }
     .info-ci9ur7b {
         top: 50px;
     }
     .counter {
-        top: 60px;
+        top: 70px;
     }
     .multiply {
-        top: 160px;
+        top: 175px;
     }
     .buttons {
-        top: 200px;
+        top: 220px;
     }
     .ckH7s3 {
-        height: 360px;
+        height: 380px;
     }
     .cJfg5sq {
-        height: 270px;
+        height: 290px;
     }
     .info-cK7lqm {
-        top: 240px;
+        top: 260px;
     }
 }
 
