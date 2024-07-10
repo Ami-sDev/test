@@ -11,7 +11,6 @@
 
 body {
     min-height: 100vh;
-    min-width: 510px;
     background-color: #0a0f1d;
 }
 
@@ -107,6 +106,7 @@ button:hover .icon {
     position: relative;
     border-radius: 0.6rem;
     height: 470px;
+    min-width: 500px;
     width: calc(100% - 20px);
     background: rgb(25, 32, 51);
 }
@@ -146,12 +146,12 @@ button:hover .icon {
     display: flex;
     justify-content: left;
     position: absolute;
-    top: 120px;
+    top: 100px;
 }
 
 .counter div {
-    width: 60px;
-    height: 100px;
+    width: 80px;
+    height: 120px;
     margin: 0 5px;
     display: flex;
     justify-content: center;
@@ -201,8 +201,8 @@ button:hover .icon {
 .buttons {
     display: flex;
     position: absolute;
-    top: 300px;
     width: 400px;
+    top: 300px;
     white-space: nowrap;
 }
 
@@ -211,6 +211,7 @@ button:hover .icon {
     padding: 5px;
     position: absolute;
     top: 240px;
+
     white-space: nowrap;
 }
 
