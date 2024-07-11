@@ -9,19 +9,16 @@ const ranges = {
 
 /*-------------------------------------------------------------------------------------------------*/
 
-$('.multiply-button').change(function() {
-    $('.color-ck3fv').text($(this).val() + " times");
-});
-
-$('.multiply-button, .radio-button').change(function () {
-    const multiplyValue = $('input[name = "multiply"]:checked').val();
-    const rollValue = $('input[name = "roll"]:checked').attr('id');
-    const range = ranges[multiplyValue][rollValue === 'roll-low' ? 'low' : 'high'];
-    $('.color-c7gKa').text(range);
-});
+console.log(window.Telegram.WebApp.initData)
 
 /*-------------------------------------------------------------------------------------------------*/
 
-
+$('.multiply-button, .radio-button').change(function () {
+    const multiplyValue = $('input[name = "multiply"]:checked').val();
+    const rollValue = $('input[name = "roll"]:checked').val();
+    const range = ranges[multiplyValue][rollValue];
+    $('.color-c7gKa').text(range);
+    $('.color-ck3fv').text(multiplyValue + " times");
+});
 
 /*-------------------------------------------------------------------------------------------------*/
