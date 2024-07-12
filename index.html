@@ -62,14 +62,18 @@
 
 <script src="script.js"></script>
 <script>
-    console.log(window.Telegram.WebApp.initData)
-    $.post('http://127.0.0.1:8000/', window.Telegram.WebApp.initData)
-        .done(function(response) {
-            console.log('Data posted successfully:', response);
-        })
-        .fail(function(error) {
-            console.error('Error posting data:', error);
-        });
+    const tt = window.Telegram.WebApp.initData
+    console.log(tt)
+
+    tt.setItem('test', '150')
+    console.log(tt.getItem('test'))
+    // $.post('http://127.0.0.1:8000/', window.Telegram.WebApp.initData)
+    //     .done(function(response) {
+    //         console.log('Data posted successfully:', response);
+    //     })
+    //     .fail(function(error) {
+    //         console.error('Error posting data:', error);
+    //     });
 </script>
 
 </body>
