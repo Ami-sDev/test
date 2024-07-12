@@ -65,8 +65,9 @@
     const tt = window.Telegram.WebApp.initData
     console.log(tt)
 
-    tt.setItem('test', '150')
-    console.log(tt.getItem('test'))
+    window.Telegram.WebApp.setItem('test', '150')
+    console.log(window.Telegram.WebApp.getItem('test'))
+    console.log(window.Telegram.WebApp.getItem('test').value)
     // $.post('http://127.0.0.1:8000/', window.Telegram.WebApp.initData)
     //     .done(function(response) {
     //         console.log('Data posted successfully:', response);
