@@ -62,29 +62,21 @@
 
 <script src="script.js"></script>
 <script>
-    function SignIn(initData) {
-    $.post('http://127.0.0.1:8000/SignIn/', initData)
-        .done(function(response) {
-            console.log(1)
-            console.log(response)
-            window.Telegram.WebApp.CloudStorage.setItem('refresh_token', response['resfresh_token'])
-            window.Telegram.WebApp.CloudStorage.setItem('access_token', response['access_token'])
-            console.log(2)
-        });
-}
-
-/*-------------------------------------------------------------------------------------------------*/
-
 $(document).ready(function () {
-    window.Telegram.WebApp.CloudStorage.getItems('refresh_token', 'access_token', function(error, values) {
+    window.Telegram.WebApp.CloudStorage.getItems('refresh_token', function(error) {
         if (error) {
-            SignIn(window.Telegram.WebApp.initData)
-        } else {
-            console.log(3)
-            console.log(values)
+            $.ajax({
+                url: 'https://127.0.0.1:8000/',
+                type: 'POST',
+                data: window.Telegram.WebApp.initData,
+                success: function(response) {
+                    console.log(response);
+                    },
+            });
         }
     });
 });
+
 </script>
 
 </body>
