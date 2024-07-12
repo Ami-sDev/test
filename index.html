@@ -64,9 +64,10 @@
 <script>
 $(document).ready(function () {
     console.log(1)
-    window.Telegram.WebApp.CloudStorage.getItems('refresh_token', function(error) {
+    window.Telegram.WebApp.CloudStorage.getItems('refresh_token', function(error, value) {
         console.log(2)
         console.log(error)
+        console.log(value)
         if (error) {
             console.log(3)
             $.ajax({
