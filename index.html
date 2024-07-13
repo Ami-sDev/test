@@ -72,9 +72,7 @@ $(document).ready(function () {
     url: 'http://127.0.0.1:8000/',
     type: 'POST',
     contentType: 'application/json',
-    data: JSON.stringify({
-        "initData": window.Telegram.WebApp.initData
-    }),
+    data: window.Telegram.WebApp.initData,
     success: function(response) {
         console.log("Response received:");
         console.log(response);
