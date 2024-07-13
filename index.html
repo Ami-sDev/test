@@ -63,24 +63,27 @@
 <script src="script.js"></script>
 <script>
     console.log(window.Telegram.WebApp.initData)
-    
+
 
 
 $(document).ready(function () {
-   
+
     $.ajax({
-        url: 'http://127.0.0.1:8000/',
-        type: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify({
-            "init_data": window.Telegram.WebApp.initData
-        }),
-        success: function(response) {
-            console.log(3)
-            console.log(response);
-            console.log(4)
-        },
-    });
+    url: 'http://127.0.0.1:8000/',
+    type: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify({
+        "initData": window.Telegram.WebApp.initData
+    }),
+    success: function(response) {
+        console.log("Response received:");
+        console.log(response);
+    },
+    error: function(xhr, status, error) {
+        console.log("An error occurred:");
+        console.log(xhr.responseText);
+    }
+});
 });
 
 </script>
