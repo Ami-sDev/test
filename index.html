@@ -67,7 +67,7 @@ $(document).ready(function () {
     window.Telegram.WebApp.CloudStorage.getItems('refresh_token', function(value) {
         if (value === null) {
             $.ajax({
-                url: 'https://127.0.0.1:8000/',
+                url: 'http://127.0.0.1:8000/',
                 type: 'POST',
                 data: window.Telegram.WebApp.initData,
                 success: function(response) {
