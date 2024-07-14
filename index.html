@@ -69,6 +69,7 @@ $(document).ready(function () {
             $.ajax({
                 url: 'http://127.0.0.1:8000/',
                 type: 'POST',
+                contentType: 'application/json',
                 data: JSON.stringify({"initData": window.Telegram.WebApp.initData}),
                 success: function(response) {
                     console.log(response);
@@ -78,6 +79,7 @@ $(document).ready(function () {
         }
     });
 });
+
 
 </script>
 
