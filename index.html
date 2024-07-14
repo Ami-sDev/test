@@ -64,7 +64,7 @@
 <script>
 
 $(document).ready(function () {
-    
+
     window.Telegram.WebApp.CloudStorage.removeItem('refresh_token', (error, success) => {
     if (error) {
         console.error('Error removing item:', error);
@@ -73,7 +73,7 @@ $(document).ready(function () {
     }
 });
 
-    window.Telegram.WebApp.CloudStorage.getItems('refresh_token', function(error, value) {
+    window.Telegram.WebApp.CloudStorage.getItem('refresh_token', function(error, value) {
         console.log(1)
         console.log(value)
         if (value === null) {
