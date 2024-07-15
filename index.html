@@ -63,37 +63,20 @@
 <script src="script.js"></script>
 <script>
 
-$(document).ready(function () {
-
-    window.Telegram.WebApp.CloudStorage.removeItem('refresh_token', (error, success) => {
-    if (error) {
-        console.error('Error removing item:', error);
-    } else {
-        console.log('Item removed successfully:', success);
-    }
-});
-
-
     window.Telegram.WebApp.CloudStorage.getItem('refresh_token', function(error, value) {
-        console.log(1)
-        console.log(error)
-        console.log(value)
-        if (value === '') {
-            $.ajax({
-                url: 'http://127.0.0.1:8000/SignIn/',
-                type: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify({"initData": window.Telegram.WebApp.initData}),
-                success: function(response) {
-                    console.log(2)
-                    console.log(response.refresh_token);
-                    window.Telegram.WebApp.CloudStorage.setItem('refresh_token', response.refresh_token, function (error, success) {});
-
-                    },
-            });
-        }
+        var refresh_token = value;
     });
-});
+    $.ajax({
+        url: 'http://127.0.0.1:8000/TokenRefresh/',
+        type: 'POST',
+        contentType: 'application/json',
+        data: {"refresh": refresh_token},
+        success: function (response) {
+            console.log(response)
+            window.Telegram.WebApp.CloudStorage.setItem('access_token', response, function (error, success) {});
+        },
+    });
+
 
 
 </script>
