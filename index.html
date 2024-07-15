@@ -70,6 +70,16 @@
         console.log('Item removed successfully:', success);
     }
 });
+    
+    $.ajax({
+        url: 'http://127.0.0.1:8000/SignIn/',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({"initData": window.Telegram.WebApp.initData}),
+        success: function(response) {
+            window.Telegram.WebApp.CloudStorage.setItem('refresh_token', response.refresh_token, function (error, success) {});
+            },
+    });
 
 
 window.Telegram.WebApp.CloudStorage.getItem('refresh_token', function(error, value) {
