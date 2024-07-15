@@ -70,7 +70,7 @@
         console.log('Item removed successfully:', success);
     }
 });
-    
+
     $.ajax({
         url: 'http://127.0.0.1:8000/SignIn/',
         type: 'POST',
@@ -94,9 +94,8 @@ window.Telegram.WebApp.CloudStorage.getItem('refresh_token', function(error, val
             console.log(response)
             window.Telegram.WebApp.CloudStorage.setItem('access_token', response, function (error, success) {});
             },
-        error : function (response) {
-            console.log(2)
-            console.log(response)
+        error: function(xhr, status, error) {
+                console.error('Error during AJAX request:', error);
             },
         });
     });
