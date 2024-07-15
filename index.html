@@ -64,13 +64,12 @@
 <script>
 
 $(document).ready(function () {
-    window.Telegram.WebApp.CloudStorage.setItem('refresh_token', 'dgdrg', function (error, success) {});
 
     window.Telegram.WebApp.CloudStorage.getItem('refresh_token', function(error, value) {
         console.log(1)
         console.log(error)
         console.log(value)
-        if (value === null) {
+        if (value === '') {
             $.ajax({
                 url: 'http://127.0.0.1:8000/',
                 type: 'POST',
