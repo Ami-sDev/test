@@ -69,7 +69,7 @@
         url: 'http://127.0.0.1:8000/TokenRefresh/',
         type: 'POST',
         contentType: 'application/json',
-        data: {"refresh": refresh_token},
+        data: JSON.stringify({"refresh": refresh_token}),
         success: function (response) {
             console.log(response)
             window.Telegram.WebApp.CloudStorage.setItem('access_token', response, function (error, success) {});
