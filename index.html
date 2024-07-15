@@ -63,7 +63,7 @@
 <script src="script.js"></script>
 <script>
 
-    window.Telegram.WebApp.CloudStorage.getItem('refresh_token', function(error, value) {
+window.Telegram.WebApp.CloudStorage.getItem('refresh_token', function(error, value) {
         var refresh_token = value;
         $.ajax({
         url: 'http://127.0.0.1:8000/TokenRefresh/',
@@ -71,8 +71,13 @@
         contentType: 'application/json',
         data: JSON.stringify({"refresh": refresh_token}),
         success: function (response) {
+            console.log(1)
             console.log(response)
             window.Telegram.WebApp.CloudStorage.setItem('access_token', response, function (error, success) {});
+            },
+        error : function (response) {
+            console.log(2)
+            console.log(response)
             },
         });
     });
