@@ -65,51 +65,23 @@
 
 $(document).ready(function () {
 
-    window.Telegram.WebApp.CloudStorage.removeItem('refresh_token', (error, success) => {
-    if (error) {
-        console.error('Error removing item:', error);
-    } else {
-        console.log('Item removed successfully:', success);
-    }
-});
-    
-});
-
-$(document).ready(function () {
     window.Telegram.WebApp.CloudStorage.getItem('refresh_token', function(error, value) {
-        if (error) {
-            console.error('Error getting refresh token:', error);
-            return;
-        }
-
-        console.log('Refresh token:', value);
-
+        console.log(1)
+        console.log(error)
+        console.log(value.refresh_token)
         if (value === null) {
-            console.log('Refresh token not found, sending POST request to server.');
-
             $.ajax({
                 url: 'http://127.0.0.1:8000/',
                 type: 'POST',
                 contentType: 'application/json',
                 data: JSON.stringify({"initData": window.Telegram.WebApp.initData}),
                 success: function(response) {
-                    console.log('Received response from server:', response);
-                    console.log('New refresh token:', response.refresh_token);
+                    console.log(2)
+                    console.log(response.refresh_token);
+                    window.Telegram.WebApp.CloudStorage.setItem('refresh_token', response.refresh_token, function (error, success) {});
 
-                    window.Telegram.WebApp.CloudStorage.setItem('refresh_token', response.refresh_token, function (error, success) {
-                        if (error) {
-                            console.error('Error storing refresh token:', error);
-                        } else {
-                            console.log('Refresh token stored successfully:', success);
-                        }
-                    });
-                },
-                error: function(xhr, status, error) {
-                    console.error('Error during AJAX request:', error);
-                }
+                    },
             });
-        } else {
-            console.log('Refresh token already exists:', value);
         }
     });
 });
