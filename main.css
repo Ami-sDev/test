@@ -11,7 +11,7 @@
 
 body {
     overflow-x: auto;
-    min-height: 50vh;
+    min-height: 30vh;
     min-width: 490px;
     background-color: #0a0f1d;
 }
